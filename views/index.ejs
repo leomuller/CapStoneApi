@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>A joke a day keeps the doctor away</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+<body>
+  <h1>Cheer up :-)</h1>
+
+
+  <p>
+
+
+    <% if (locals.joke !== undefined) { %>
+        <h2><%=joke%></h2>
+    <% } else { %>
+        <h2>Click more below for a joke</h2>
+    <% } %>
+
+  </p>
+
+
+  <p>
+    <% if (locals.joke !== undefined && punch != "") { %>
+        <h3 class="punch"><%=punch%></h3>
+    <% } %>
+  </p>
+
+
+
+  <a href=".">More!</a>
+  
+</body>
+
+</html>

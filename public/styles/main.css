@@ -1,0 +1,26 @@
+body{
+    background-color: lightblue;
+}
+
+
+h3.punch {
+    color:gray;
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+    display:inline-block;
+
+    animation-delay:5s; /*doesn't work.*/
+
+
+    animation: fadeIn 5s;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
